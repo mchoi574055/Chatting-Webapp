@@ -33,7 +33,6 @@ function App() {
     <div className="App">
       <header>
         <SignOut />
-        <AddFriend />
       </header>
 
       <section>
@@ -45,22 +44,6 @@ function App() {
 }
 
 function SignIn() {
-
-  const signInWithGoogle = () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider);
-  }
-
-  return (
-    <>
-      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p>Welcome to an online chat room!</p>
-    </>
-  )
-
-}
-
-function AddFriend() {
 
   const signInWithGoogle = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
